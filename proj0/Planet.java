@@ -1,6 +1,6 @@
 public class Planet {
-    public static final double G = 6.67e-11;
-    public static final String imgDir = "images/";
+    private static final double G = 6.67e-11;
+    private static final String imgDir = "images/";
     public double xxPos;
     public double yyPos;
     public double xxVel;

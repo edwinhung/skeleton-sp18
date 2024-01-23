@@ -1,7 +1,7 @@
 public class NBody {
 
-    public static final String background = "starfield.jpg";
-    public static final String imgDir = "images/";
+    private static final String background = "starfield.jpg";
+    private static final String imgDir = "images/";
 
     public static double readRadius(String filename) {
         In in = new In(filename);
@@ -34,7 +34,6 @@ public class NBody {
         StdDraw.setScale(-radius, radius);
         StdDraw.picture(0,0,imgDir + background);
         Planet[] planets = readPlanets(filename);
-        System.out.println(planets);
         for (Planet p: planets) {
             p.draw();
         }
